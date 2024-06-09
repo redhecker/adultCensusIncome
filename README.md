@@ -16,7 +16,8 @@ A model on an Adult Census Income  dataset, and the goal is to predict whether i
 │   ├─dataProcessing.ipynb
 │   └─main.py
 ├─report
-├─test.txt
+├─test_result.txt
+├─requirements.txt
 ├─.gitignore
 └─README
 ```
