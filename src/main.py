@@ -38,37 +38,37 @@ if modelChose == 'help' or modelChose == 'Help' or modelChose == '--help' or mod
 elif modelChose == 'RD':
     print('Random')
     pred_label = np.zeros(encode_data_test.shape[0])
-    np.savetxt('Random.txt', pred_label, fmt='%d')
+    np.savetxt('..\\predResult\\Random.txt', pred_label, fmt='%d')
 elif modelChose == 'SGD':
     print('Stochastic Gradient Descent')
     model = SGDClassifier()
     model.fit(encode_data.drop('income', axis=1), encode_data['income'])
     pred_label = model.predict(encode_data_test)
-    np.savetxt('SGD.txt', pred_label, fmt='%d')
+    np.savetxt('..\\predResult\\SGD.txt', pred_label, fmt='%d')
 elif modelChose == 'DT':
     print('Decision Tree')
     model = DecisionTreeClassifier()
     model.fit(encode_data.drop('income', axis=1), encode_data['income'])
     pred_label = model.predict(encode_data_test)
-    np.savetxt('DecisionTree.txt', pred_label, fmt='%d')
+    np.savetxt('..\\predResult\\DecisionTree.txt', pred_label, fmt='%d')
 elif modelChose == 'LR':
     print('Logistic Regression')
     model = LogisticRegression()
     model.fit(encode_data.drop('income', axis=1), encode_data['income'])
     pred_label = model.predict(encode_data_test)
-    np.savetxt('LogisticRegression.txt', pred_label, fmt='%d')
+    np.savetxt('..\\predResult\\LogisticRegression.txt', pred_label, fmt='%d')
 elif modelChose == 'RF':
     print('Random Forest')
     model = RandomForestClassifier()
     model.fit(encode_data.drop('income', axis=1), encode_data['income'])
     pred_label = model.predict(encode_data_test)
-    np.savetxt('RandomForest.txt', pred_label, fmt='%d')
+    np.savetxt('..\\predResult\\RandomForest.txt', pred_label, fmt='%d')
 elif modelChose == 'GB':
     print('Gradient Boosting')
     model = GradientBoostingClassifier()
     model.fit(encode_data.drop('income', axis=1), encode_data['income'])
     pred_label = model.predict(encode_data_test)
-    np.savetxt('GradientBoosting.txt', pred_label, fmt='%d')
+    np.savetxt('..\\predResult\\GradientBoosting.txt', pred_label, fmt='%d')
 else:
     print('No such model: ', modelChose)
     print('Usage: python main.py [model]')
