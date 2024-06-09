@@ -27,10 +27,12 @@ you need to follow the steps to build this repository:
 first, clone the repository
 ```
 git clone https://github.com/redhecker/adultCensusIncome.git
+cd adultCensusIncome
 ```
 then, create a new virtual environment and install the requirements
 ```
 conda create -n test python==3.10
+cd src
 pip install -r requirements.txt
 ```
 finally, you can run the main prrogram
