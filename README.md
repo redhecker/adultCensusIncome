@@ -24,6 +24,7 @@ A model on an Adult Census Income  dataset, and the goal is to predict whether i
 
 ## How to build
 you need to follow the steps to build this repository:
+
 first, clone the repository
 ```
 git clone https://github.com/redhecker/adultCensusIncome.git
