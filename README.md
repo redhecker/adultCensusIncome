@@ -15,18 +15,27 @@ A model on an Adult Census Income  dataset, and the goal is to predict whether i
 │   ├─visualization.ipynb
 │   ├─dataProcessing.ipynb
 │   └─main.py
-├─report
-├─test_result.txt
+├─report.pdf
+├─prediction.txt
 ├─requirements.txt
 ├─.gitignore
 └─README
 ```
 
 ## How to build
-to build this, you need
+you need to follow the steps to build this repository:
+first, clone the repository
 ```
+git clone https://github.com/redhecker/adultCensusIncome.git
+```
+then, create a new virtual environment and install the requirements
+```
+conda create -n test python==3.10
 pip install -r requirements.txt
+```
+finally, you can run the main prrogram
+```
 python main.py
 ```
-you can generate the answer with the model you like, and you can run `visualization.ipynb` to see the distribution of the data and run `dataProcessing.ipynb` to see the performance of the models.
+you can generate the answer with the model you like, and you can also run `visualization.ipynb` to see the distribution of the data and run `dataProcessing.ipynb` to see the performance of the models.
 
